@@ -1,0 +1,28 @@
+<home id = "h1" name = "John's home">
+	<room id = "r1" name = "Livingroom">
+		<device id = "d1" name = "LED_TV">
+			<state>0</state>
+			<current>2</current>
+			<power>150</power>
+		</device>
+		<device id = "d2" name = "LIGHT01">
+			<state>1</state>
+			<current>0.4</current>
+			<power>140</power>
+		</device>
+	</room>
+</home>
+<home id = "h2" name = "Ive's home">
+	<room id = "r1" name = "Livingroom">
+		<device id = "d1" name = "LED_TV">
+			<state>0</state>
+			<current>2</current>
+			<power>150</power>
+		</device>
+		<device id = "d2" name = "LIGHT01">
+			<state>1</state>
+			<current>0.2</current>
+			<power>13</power>
+		</device>
+	</room>
+</home>
