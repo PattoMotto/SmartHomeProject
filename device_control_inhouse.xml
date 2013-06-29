@@ -1,0 +1,65 @@
+<home id = "h1" name = "Tester's home">
+	<room id = "r1" name = "Bedroom2" person = "1" webreq = "0">
+		<device id = "d1" name = "LIGHT01" webreq = "0">
+			<state>1</state>
+			<current>0.4</current>
+			<power>140</power>
+		</device>
+		<device id = "d2" name = "FAN01" webreq = "0">
+			<state>1</state>
+			<current>2</current>
+			<power>150</power>
+		</device>
+	</room>
+	<room id = "r2" name = "MasterBedroom" person = "0" webreq = "1">
+		<device id = "d1" name = "LIGHT01" webreq = "0">
+			<state>1</state>
+			<current>0.4</current>
+			<power>140</power>
+		</device>
+		<device id = "d2" name = "FAN01" webreq = "0">
+			<state>1</state>
+			<current>2</current>
+			<power>150</power>
+		</device>
+		<device id = "d3" name = "LED_TV" webreq = "1">
+			<state>1</state>
+			<current>2</current>
+			<power>150</power>
+		</device>
+	</room>
+	<room id = "r3" name = "Family_Diningroom" person = "0" webreq = "0">
+		<device id = "d1" name = "LIGHT01" webreq = "0">
+			<state>1</state>
+			<current>0.4</current>
+			<power>140</power>
+		</device>
+		<device id = "d2" name = "LIGHT02" webreq = "0">
+			<state>1</state>
+			<current>0.4</current>
+			<power>140</power>
+		</device>
+		<device id = "d3" name = "FAN01" webreq = "0">
+			<state>1</state>
+			<current>2</current>
+			<power>150</power>
+		</device>
+	</room>
+	<room id = "r4" name = "LivingRoom" person = "0" webreq = "0">
+		<device id = "d1" name = "LIGHT01" webreq = "0">
+			<state>1</state>
+			<current>0.4</current>
+			<power>140</power>
+		</device>
+		<device id = "d2" name = "LIGHT02" webreq = "0">
+			<state>1</state>
+			<current>0.4</current>
+			<power>140</power>
+		</device>
+		<device id = "d3" name = "FAN01" webreq = "0">
+			<state>1</state>
+			<current>2</current>
+			<power>150</power>
+		</device>
+	</room>
+</home>
