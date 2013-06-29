@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<neighbor no="2">
-	<home id="h1" name="Tester's home" no="4">
-		<room id="r1" name="Bedroom2" person="1" webreq="0" no="2">
+<neighbor>
+	<home id="h1" name="Tester's home">
+		<room id="r1" name="Bedroom2" person="1" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
@@ -13,7 +13,7 @@
 				<power>150</power>
 			</device>
 		</room>
-		<room id="r2" name="MasterBedroom" person="0" webreq="0" no="3">
+		<room id="r2" name="MasterBedroom" person="0" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
@@ -30,7 +30,7 @@
 				<power>150</power>
 			</device>
 		</room>
-		<room id="r3" name="Family_Diningroom" person="0" webreq="0" no="3">
+		<room id="r3" name="Family_DiningRoom" person="0" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
@@ -47,7 +47,7 @@
 				<power>150</power>
 			</device>
 		</room>
-		<room id="r4" name="LivingRoom" person="0" webreq="0" no="3">
+		<room id="r4" name="LivingRoom" person="0" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
@@ -65,8 +65,8 @@
 			</device>
 		</room>
 	</home>
-	<home id="h2" name="Tester2's home" no="4">
-		<room id="r1" name="Bedroom2" person="1" webreq="0" no="2">
+	<home id="h2" name="Tester2's home">
+		<room id="r1" name="Toilet" person="1" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
@@ -77,8 +77,13 @@
 				<current>2</current>
 				<power>150</power>
 			</device>
+			<device id="d3" name="FAN02" webreq="0">
+				<state>1</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
 		</room>
-		<room id="r2" name="MasterBedroom" person="0" webreq="0" no="3">
+		<room id="r2" name="MasterBedroom" person="0" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
@@ -95,7 +100,19 @@
 				<power>150</power>
 			</device>
 		</room>
-		<room id="r3" name="Family_Diningroom" person="0" webreq="0" no="3">
+		<room id="r3" name="LaundryRoom" person="0" webreq="0">
+			<device id="d1" name="LIGHT01" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="LIGHT02" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+		</room>
+		<room id="r4" name="LivingRoom" person="0" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
@@ -112,13 +129,13 @@
 				<power>150</power>
 			</device>
 		</room>
-		<room id="r4" name="LivingRoom" person="0" webreq="0" no="3">
+		<room id="r5" name="Kitchen" person="0" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="LIGHT02" webreq="0">
+			<device id="d2" name="LCD_TV" webreq="0">
 				<state>1</state>
 				<current>0.4</current>
 				<power>140</power>
