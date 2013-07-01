@@ -68,7 +68,7 @@
 	</xs:complexType>
 </xs:element>
 
-<xs:element name="neighbor"/>
+<xs:element name="neighbor">
 	<xs:complexType>
 		<xs:sequence>
 			<xs:element ref="home"/>
