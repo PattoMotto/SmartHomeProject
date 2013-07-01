@@ -11,7 +11,7 @@
 		<xs:pattern value="[h][0-9]+"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:element>
+</xs:attribute>
 
 <xs:attribute name="rid" use="required">
   <xs:simpleType>
@@ -19,7 +19,7 @@
 		<xs:pattern value="[r][0-9]+"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:element>
+</xs:attribute>
 
 <xs:attribute name="did" use="required">
   <xs:simpleType>
@@ -27,7 +27,7 @@
 		<xs:pattern value="[d][0-9]+"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:element>
+</xs:attribute>
 <xs:attribute name="name" type="xs:string" use="required"/>
 <xs:attribute name="person" type="xs:integer" use="required" default="0"/>
 <xs:attribute name="webreq" type="xs:boolean" default="0"/>
@@ -75,6 +75,5 @@
 		</xs:sequence>
 	</xs:complexType>
 </xs:element>
-
 
 </xs:schema>
