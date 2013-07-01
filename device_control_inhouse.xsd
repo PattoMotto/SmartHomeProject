@@ -5,29 +5,24 @@
 <xs:element name="current" type="xs:decimal" default="0"/>
 <xs:element name="power" type="xs:decimal" default="0"/>
 <!-- definition of attributes -->
-<xs:attribute name="hid" use="required">
-  <xs:simpleType>
-    <xs:restriction base="xs:string">
-		<xs:pattern value="[h][0-9]+"/>
-    </xs:restriction>
-  </xs:simpleType>
-</xs:attribute>
+<xs:simpleType name="hidtype">
+  <xs:restriction base="xs:string">
+	<xs:pattern value="[h][0-9]+"/>
+  </xs:restriction>
+</xs:simpleType>
 
-<xs:attribute name="rid" use="required">
-  <xs:simpleType>
-    <xs:restriction base="xs:string">
-		<xs:pattern value="[r][0-9]+"/>
-    </xs:restriction>
-  </xs:simpleType>
-</xs:attribute>
+<xs:simpleType name="ridtype">
+  <xs:restriction base="xs:string">
+	<xs:pattern value="[r][0-9]+"/>
+  </xs:restriction>
+</xs:simpleType>
 
-<xs:attribute name="did" use="required">
-  <xs:simpleType>
-    <xs:restriction base="xs:string">
-		<xs:pattern value="[d][0-9]+"/>
-    </xs:restriction>
-  </xs:simpleType>
-</xs:attribute>
+<xs:simpleType name="didtype">
+  <xs:restriction base="xs:string">
+	<xs:pattern value="[d][0-9]+"/>
+  </xs:restriction>
+</xs:simpleType>
+
 <xs:attribute name="name" type="xs:string" use="required"/>
 <xs:attribute name="person" type="xs:integer" use="required" default="0"/>
 <xs:attribute name="webreq" type="xs:boolean" default="0"/>
@@ -40,7 +35,7 @@
 			<xs:element ref="current"/>
 			<xs:element ref="power"/>
 		</xs:sequence>
-		<xs:attribute ref="did"/>
+		<xs:attribute name="id" type="didtype" use="required"/>
 		<xs:attribute ref="name"/>
 		<xs:attribute ref="webreq"/>
 	</xs:complexType>
@@ -51,7 +46,7 @@
 		<xs:sequence>
 			<xs:element ref="device" />
 		</xs:sequence>
-		<xs:attribute ref="rid"/>
+		<xs:attribute name="id" type="ridtype" use="required"/>
 		<xs:attribute ref="name" />
 		<xs:attribute ref="person" />
 		<xs:attribute ref="webreq" />
@@ -63,7 +58,7 @@
 		<xs:sequence>
 			<xs:element ref="room"/>
 		</xs:sequence>
-		<xs:attribute ref="hid"/>
+		<xs:attribute name="id" type="hidtype" use="required"/>
 		<xs:attribute ref="name"/>
 	</xs:complexType>
 </xs:element>
