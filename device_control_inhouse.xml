@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<neighbor>
+<neighbor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="device_control_inhouse.xsd">
 	<home id="h1" name="Tester's home">
 		<room id="r1" name="Bedroom2" person="1" webreq="0">
 			<device id="d1" name="LIGHT01" webreq="0">
