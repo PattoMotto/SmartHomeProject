@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
 <!-- definition of simple elements -->
 <xs:element name="state" type="xs:boolean" default="0"/>
 <xs:element name="current" type="xs:decimal" default="0"/>
@@ -23,9 +24,9 @@
   </xs:restriction>
 </xs:simpleType>
 
-<xs:attribute name="name" type="xs:string" use="required"/>
-<xs:attribute name="person" type="xs:integer" use="required" default="0"/>
-<xs:attribute name="webreq" type="xs:boolean" default="0"/>
+<xs:attribute name="name" type="xs:string"/>
+<xs:attribute name="person" type="xs:integer" default="0"/>
+<xs:attribute name="webreq" type="xs:string" default="0"/>
 
 <!-- definition of complex elements -->
 <xs:element name="device">
@@ -36,26 +37,27 @@
 			<xs:element ref="power"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="didtype" use="required"/>
-		<xs:attribute ref="name"/>
+		<xs:attribute ref="name"  use="required"/>
 		<xs:attribute ref="webreq"/>
 	</xs:complexType>
 </xs:element>
 
 <xs:element name="room">
 	<xs:complexType>
-		<xs:sequence>
+		<xs:sequence  maxOccurs="unbounded">
 			<xs:element ref="device" />
 		</xs:sequence>
 		<xs:attribute name="id" type="ridtype" use="required"/>
-		<xs:attribute ref="name" />
-		<xs:attribute ref="person" />
+		<xs:attribute ref="name"  use="required"/>
+		<xs:attribute ref="person"  use="required"/>
 		<xs:attribute ref="webreq" />
+
 	</xs:complexType>
 </xs:element>
 
 <xs:element name="home">
 	<xs:complexType>
-		<xs:sequence>
+		<xs:sequence  maxOccurs="unbounded">
 			<xs:element ref="room"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="hidtype" use="required"/>
@@ -65,7 +67,7 @@
 
 <xs:element name="neighbor">
 	<xs:complexType>
-		<xs:sequence>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
 			<xs:element ref="home"/>
 		</xs:sequence>
 	</xs:complexType>
