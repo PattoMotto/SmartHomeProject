@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<!-- definition of simple elements -->
+<xs:element name="state" type="xs:boolean" default="0"/>
+<xs:element name="current" type="xs:decimal" default="0"/>
+<xs:element name="power" type="xs:decimal" default="0"/>
+<!-- definition of attributes -->
+<xs:simpleType name="hidtype">
+  <xs:restriction base="xs:string">
+	<xs:pattern value="[h][0-9]+"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="ridtype">
+  <xs:restriction base="xs:string">
+	<xs:pattern value="[r][0-9]+"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="didtype">
+  <xs:restriction base="xs:string">
+	<xs:pattern value="[d][0-9]+"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:attribute name="name" type="xs:string"/>
+<xs:attribute name="person" type="xs:integer" default="0"/>
+<xs:attribute name="webreq" type="xs:string" default="0"/>
+
+<!-- definition of complex elements -->
+<xs:element name="device">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="state"/>
+			<xs:element ref="current"/>
+			<xs:element ref="power"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="didtype" use="required"/>
+		<xs:attribute ref="name"  use="required"/>
+		<xs:attribute ref="webreq"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="room">
+	<xs:complexType>
+		<xs:sequence  maxOccurs="unbounded">
+			<xs:element ref="device" />
+		</xs:sequence>
+		<xs:attribute name="id" type="ridtype" use="required"/>
+		<xs:attribute ref="name"  use="required"/>
+		<xs:attribute ref="person"  use="required"/>
+		<xs:attribute ref="webreq" />
+
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="home">
+	<xs:complexType>
+		<xs:sequence  maxOccurs="unbounded">
+			<xs:element ref="room"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="hidtype" use="required"/>
+		<xs:attribute ref="name"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="neighbor">
+	<xs:complexType>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="home"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>
