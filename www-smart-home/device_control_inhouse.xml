@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<neighbor>
+	<home id="h1" name="Tester's home">
+		<room id="r1" name="Bedroom2" person="1" webreq="1">
+			<device id="d1" name="LIGHT01" webreq="1">
+				<state>0</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="FAN01" webreq="1">
+				<state>1</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
+		</room>
+		<room id="r2" name="MasterBedroom" person="0" webreq="1">
+			<device id="d1" name="LIGHT01" webreq="1">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="FAN01" webreq="1">
+				<state>1</state>
+				<current>1.5</current>
+				<power>150</power>
+			</device>
+			<device id="d3" name="LED_TV" webreq="1">
+				<state>0</state>
+				<current>1.5</current>
+				<power>150</power>
+			</device>
+		</room>
+		<room id="r3" name="Family_DiningRoom" person="0" webreq="1">
+			<device id="d1" name="LIGHT01" webreq="1">
+				<state>0</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="LIGHT02" webreq="1">
+				<state>0</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d3" name="FAN01" webreq="1">
+				<state>1</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
+		</room>
+		<room id="r4" name="LivingRoom" person="0" webreq="0">
+			<device id="d1" name="LIGHT01" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="LIGHT02" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d3" name="FAN01" webreq="0">
+				<state>1</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
+		</room>
+	</home>
+	<home id="h2" name="Tester2's home">
+		<room id="r1" name="Toilet" person="1" webreq="1">
+			<device id="d1" name="LIGHT01" webreq="1">
+				<state>0</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="FAN01" webreq="1">
+				<state>0</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
+			<device id="d3" name="FAN02" webreq="1">
+				<state>0</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
+		</room>
+		<room id="r2" name="MasterBedroom" person="0" webreq="1">
+			<device id="d1" name="LIGHT01" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="FAN01" webreq="1">
+				<state>0</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
+			<device id="d3" name="LED_TV" webreq="1">
+				<state>1</state>
+				<current>1.5</current>
+				<power>150</power>
+			</device>
+		</room>
+		<room id="r3" name="LaundryRoom" person="0" webreq="0">
+			<device id="d1" name="LIGHT01" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="LIGHT02" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+		</room>
+		<room id="r4" name="LivingRoom" person="0" webreq="0">
+			<device id="d1" name="LIGHT01" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="LIGHT02" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d3" name="FAN01" webreq="0">
+				<state>1</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
+		</room>
+		<room id="r5" name="Kitchen" person="0" webreq="0">
+			<device id="d1" name="LIGHT01" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d2" name="LCD_TV" webreq="0">
+				<state>1</state>
+				<current>0.4</current>
+				<power>140</power>
+			</device>
+			<device id="d3" name="FAN01" webreq="0">
+				<state>1</state>
+				<current>2</current>
+				<power>150</power>
+			</device>
+		</room>
+	</home>
+</neighbor>

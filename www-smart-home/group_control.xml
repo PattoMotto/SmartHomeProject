@@ -1,0 +1,20 @@
+<group id = "g1" name = "wake_up">
+	<!-- group command working for 10 min  -->
+	<!-- unlimit duration is -1 -->
+	<!-- create query to timer sql all command -->
+	<duration>10</duration>
+	<command id = "c1">
+		<!-- turn on LED_TV -->
+		<hid>h1</hid>
+		<rid>r1</rid>
+		<did>d1</did>
+		<state>1</state>
+	</command>
+	<command id = "c2">
+		<!-- turn off AirCond -->
+		<hid>h1</hid>
+		<rid>r1</rid>
+		<did>d2</did>
+		<state>0</state>
+	</command>
+</group>
