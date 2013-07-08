@@ -1,0 +1,8 @@
+Ethernet adapter Local Area Connection 2:
+
+   Connection-specific DNS Suffix  . : coe.psu.ac.th
+   IPv6 Address. . . . . . . . . . . : 2001:3c8:9009:1e8:25e5:34e0:a60f:60a9
+   Link-local IPv6 Address . . . . . : fe80::7578:4108:d011:9be5%13
+   IPv4 Address. . . . . . . . . . . : 172.30.232.68
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 172.30.232.1
