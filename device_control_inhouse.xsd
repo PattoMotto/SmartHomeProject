@@ -27,6 +27,7 @@
 <xs:attribute name="name" type="xs:string"/>
 <xs:attribute name="person" type="xs:integer" default="0"/>
 <xs:attribute name="webreq" type="xs:string" default="0"/>
+<xs:attribute name="delayno" type="xs:string"/>
 
 <!-- definition of complex elements -->
 <xs:element name="device">
@@ -39,6 +40,7 @@
 		<xs:attribute name="id" type="didtype" use="required"/>
 		<xs:attribute ref="name"  use="required"/>
 		<xs:attribute ref="webreq"/>
+		<xs:attribute ref="delayno"  use="required"/>
 	</xs:complexType>
 </xs:element>
 

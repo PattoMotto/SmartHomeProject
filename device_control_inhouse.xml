@@ -1,66 +1,65 @@
-<?xml version="1.0"  encoding="ISO-8859-1" ?>
-<neighbor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="device_control_inhouse.xsd">
+<?xml version="1.0"?>
+<neighbor>
 	<home id="h1" name="Tester's home">
-		<room id="r1" name="Bedroom2" person="1" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
-				<state>1</state>
+		<room id="r1" name="Bedroom2" person="1" webreq="1">
+			<device id="d1" name="LIGHT01" webreq="1" delayno="0">
+				<state>0</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="FAN01" webreq="0">
+			<device id="d2" name="FAN01" webreq="1" delayno="1">
 				<state>1</state>
 				<current>2</current>
 				<power>150</power>
 			</device>
 		</room>
-		<room id="r2" name="MasterBedroom" person="0" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
+		<room id="r2" name="MasterBedroom" person="0" webreq="1">
+			<device id="d1" name="LIGHT01" webreq="0" delayno="2">
 				<state>1</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="FAN01" webreq="0">
-				<state>1</state>
+			<device id="d2" name="FAN01" webreq="1" delayno="3">
+				<state>0</state>
 				<current>1.5</current>
 				<power>150</power>
 			</device>
-			<device id="d3" name="LED_TV" webreq="0">
+			<device id="d3" name="LED_TV" webreq="0" delayno="4">
 				<state>0</state>
 				<current>1.5</current>
 				<power>150</power>
 			</device>
 		</room>
 		<room id="r3" name="Family_DiningRoom" person="0" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
-				<state>1</state>
+			<device id="d1" name="LIGHT01" webreq="0" delayno="5">
+				<state>0</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="LIGHT02" webreq="0">
-				<state>1</state>
+			<device id="d2" name="LIGHT02" webreq="0" delayno="6">
+				<state>0</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d3" name="FAN01" webreq="0">
+			<device id="d3" name="FAN01" webreq="0" delayno="7">
 				<state>1</state>
 				<current>2</current>
 				<power>150</power>
 			</device>
 		</room>
 		<room id="r4" name="LivingRoom" person="0" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
-				<state>1</state>
+			<device id="d1" name="LIGHT01" webreq="0" delayno="8">
+				<state>0</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="LIGHT02" webreq="0">
-				<state>1</state>
+			<device id="d2" name="LIGHT02" webreq="0" delayno="9">
+				<state>0</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d3" name="FAN01" webreq="0">
-				<state>1</state>
+			<device id="d3" name="FAN01" webreq="0" delayno="10">
+				<state>0</state>
 				<current>2</current>
 				<power>150</power>
 			</device>
@@ -68,81 +67,81 @@ xsi:noNamespaceSchemaLocation="device_control_inhouse.xsd">
 	</home>
 	<home id="h2" name="Tester2's home">
 		<room id="r1" name="Toilet" person="1" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
+			<device id="d1" name="LIGHT01" webreq="0" delayno="11">
 				<state>1</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="FAN01" webreq="0">
+			<device id="d2" name="FAN01" webreq="0" delayno="12">
 				<state>1</state>
 				<current>2</current>
 				<power>150</power>
 			</device>
-			<device id="d3" name="FAN02" webreq="0">
+			<device id="d3" name="FAN02" webreq="0" delayno="13">
 				<state>1</state>
 				<current>2</current>
 				<power>150</power>
 			</device>
 		</room>
 		<room id="r2" name="MasterBedroom" person="0" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
-				<state>1</state>
+			<device id="d1" name="LIGHT01" webreq="0" delayno="14">
+				<state>0</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="FAN01" webreq="0">
+			<device id="d2" name="FAN01" webreq="0" delayno="15">
 				<state>1</state>
 				<current>2</current>
 				<power>150</power>
 			</device>
-			<device id="d3" name="LED_TV" webreq="0">
-				<state>0</state>
+			<device id="d3" name="LED_TV" webreq="0" delayno="16">
+				<state>1</state>
 				<current>1.5</current>
 				<power>150</power>
 			</device>
 		</room>
 		<room id="r3" name="LaundryRoom" person="0" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
+			<device id="d1" name="LIGHT01" webreq="0" delayno="17">
 				<state>1</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="LIGHT02" webreq="0">
+			<device id="d2" name="LIGHT02" webreq="0" delayno="18">
 				<state>1</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
 		</room>
 		<room id="r4" name="LivingRoom" person="0" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
+			<device id="d1" name="LIGHT01" webreq="0" delayno="19">
 				<state>1</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="LIGHT02" webreq="0">
+			<device id="d2" name="LIGHT02" webreq="0" delayno="20">
 				<state>1</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d3" name="FAN01" webreq="0">
+			<device id="d3" name="FAN01" webreq="0" delayno="21">
 				<state>1</state>
 				<current>2</current>
 				<power>150</power>
 			</device>
 		</room>
 		<room id="r5" name="Kitchen" person="0" webreq="0">
-			<device id="d1" name="LIGHT01" webreq="0">
-				<state>1</state>
+			<device id="d1" name="LIGHT01" webreq="0" delayno="22">
+				<state>0</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d2" name="LCD_TV" webreq="0">
-				<state>1</state>
+			<device id="d2" name="LCD_TV" webreq="0" delayno="23">
+				<state>0</state>
 				<current>0.4</current>
 				<power>140</power>
 			</device>
-			<device id="d3" name="FAN01" webreq="0">
-				<state>1</state>
+			<device id="d3" name="FAN01" webreq="0" delayno="24">
+				<state>0</state>
 				<current>2</current>
 				<power>150</power>
 			</device>
